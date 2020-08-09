@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Form Submission
+	</title>
+</head>
+<body>
+	<h1>Register</h1>
+
+	<form>
+		<div>
+			<label for="FirstName">First Name:<input type="text" id="FirstName" placeholder="John" required>
+			</label>
+			<label for="LastName">Last Name:<input type="text" id="LastName" placeholder="Smith" required>
+			</label>
+		</div>
+		<div>
+			<label>
+			Male<input type="radio" name="GenderChoice" value="Male">
+			Female<input type="radio" name="GenderChoice" value="Female">
+			Other<input type="radio" name="GenderChoice" value="Other">
+		</label>
+		</div>
+		<div>
+			<label for="Email">Email:<input type="Email" id="Email" placeholder="Your Email" required>
+			</label>
+			<label for="Password">Password:<input type="Password" id="Password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+			</label>
+		</div>
+		<div>
+			<label>Birthday:</label>
+			<select name="Month">
+				<option>Month</option>
+				<option>Jan</option>
+				<option>Feb</option>
+				<option>Mar</option>
+			</select>
+			<select name="Day">
+				<option>Day</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+			</select>
+			<select name="Year">
+				<option>Year</option>
+				<option >2000</option>
+				<option>2001</option>
+				<option>2002</option>
+			</select>
+		</div>
+		<div>
+			<label for="Terms">I agree to the terms and condtions<input type="checkbox" id="Terms" name="Terms"></label>
+		</div>
+		<input type="submit">
+	</form>
+</body>
+</html>
